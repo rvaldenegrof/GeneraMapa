@@ -1,0 +1,6 @@
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\bin\Release\GeneraMapa.exe.config
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Release\GeneraMapa.csproj.ResolveComReference.cache
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\bin\Release\GeneraMapa.exe
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\bin\Release\GeneraMapa.pdb
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Release\GeneraMapa.exe
+C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Release\GeneraMapa.pdb
