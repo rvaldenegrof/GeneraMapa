@@ -103,40 +103,36 @@ namespace GeneraMapa
 
                 File.WriteAllText(Archivo_Temp, strTodaLaInfo); // una vez finalizado de recorrer la hoja con datos del excel, graba el resultado en un archivo temporal.
 
-            }
-            catch (Exception e) {
+                // Vamoh a cerrarloh
+                excelApp.DisplayAlerts = false;
+                Workbooks.Close();
+                excelApp.Quit();
 
-<<<<<<< HEAD
+                if (data != null)
+                {
+                    Marshal.ReleaseComObject(data);
+                }
+
+                if (Hoja != null)
+                {
+                    Marshal.ReleaseComObject(Hoja);
+                }
+
+                if (Workbooks != null)
+                {
+                    Marshal.ReleaseComObject(Workbooks);
+                }
+
+                if (excelApp != null)
+                {
+                    Marshal.ReleaseComObject(excelApp);
+                }
+            }
+                catch (Exception e) {
                 Console.WriteLine("No se encuentra archivo de carga ", e);
                 Console.ReadLine();
             }
-=======
-            // Vamoh a cerrarloh
-            excelApp.DisplayAlerts = false;
-            Workbooks.Close();
-            excelApp.Quit();
 
-            if (data != null)
-            {
-                Marshal.ReleaseComObject(data);
-            }
-
-            if (Hoja != null)
-            {
-                Marshal.ReleaseComObject(Hoja);
-            }
-
-            if (Workbooks != null)
-            {
-                Marshal.ReleaseComObject(Workbooks);
-            }
-
-            if (excelApp != null)
-            {
-                Marshal.ReleaseComObject(excelApp);
-            }
-
->>>>>>> nalv
         }
 
         public static void Procesa_Archivo_Temporal(int Data_Desde, int Data_Hasta, String Archivo_Temp)
