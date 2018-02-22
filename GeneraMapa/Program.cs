@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace GeneraMapa
 {
@@ -105,9 +106,37 @@ namespace GeneraMapa
             }
             catch (Exception e) {
 
+<<<<<<< HEAD
                 Console.WriteLine("No se encuentra archivo de carga ", e);
                 Console.ReadLine();
             }
+=======
+            // Vamoh a cerrarloh
+            excelApp.DisplayAlerts = false;
+            Workbooks.Close();
+            excelApp.Quit();
+
+            if (data != null)
+            {
+                Marshal.ReleaseComObject(data);
+            }
+
+            if (Hoja != null)
+            {
+                Marshal.ReleaseComObject(Hoja);
+            }
+
+            if (Workbooks != null)
+            {
+                Marshal.ReleaseComObject(Workbooks);
+            }
+
+            if (excelApp != null)
+            {
+                Marshal.ReleaseComObject(excelApp);
+            }
+
+>>>>>>> nalv
         }
 
         public static void Procesa_Archivo_Temporal(int Data_Desde, int Data_Hasta, String Archivo_Temp)
