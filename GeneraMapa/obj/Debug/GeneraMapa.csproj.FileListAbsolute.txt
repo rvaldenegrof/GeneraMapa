@@ -5,3 +5,4 @@ C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\Gen
 C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Debug\GeneraMapa.exe
 C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Debug\GeneraMapa.pdb
 C:\_Chiloexpress2018\GEC Documentación AM DOC GEC_20180212\temp\Genera_Mapa\GeneraMapa\GeneraMapa\obj\Debug\GeneraMapa.csproj.ResolveComReference.cache
+C:\CXP\GIT\GeneraMapa\GeneraMapa\obj\Debug\GeneraMapa.csproj.ResolveComReference.cache
