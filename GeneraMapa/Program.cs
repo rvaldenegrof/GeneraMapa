@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace GeneraMapa
 {
@@ -98,6 +99,31 @@ namespace GeneraMapa
             }
 
             File.WriteAllText(Archivo_Temp, strTodaLaInfo); // una vez finalizado de recorrer la hoja con datos del excel, graba el resultado en un archivo temporal.
+
+            // Vamoh a cerrarloh
+            excelApp.DisplayAlerts = false;
+            Workbooks.Close();
+            excelApp.Quit();
+
+            if (data != null)
+            {
+                Marshal.ReleaseComObject(data);
+            }
+
+            if (Hoja != null)
+            {
+                Marshal.ReleaseComObject(Hoja);
+            }
+
+            if (Workbooks != null)
+            {
+                Marshal.ReleaseComObject(Workbooks);
+            }
+
+            if (excelApp != null)
+            {
+                Marshal.ReleaseComObject(excelApp);
+            }
 
         }
 
